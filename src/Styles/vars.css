@@ -1,0 +1,12 @@
+:root {
+    --color-background: #F5ECDF;
+    --color-primary-red: #c92a2a;
+    --color-primary-red-dark: #A42C34;
+    --color-yellow: #ffec99;
+    --color-yellow-dark: #ffe066;
+    --color-brown-dark: #835836;
+    --color-brown-medium: #B58F46;
+
+    --font-body: 'Inter', sans-serif;
+    --font-header: 'Ultra', serif;
+}

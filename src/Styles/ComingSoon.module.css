@@ -1,0 +1,44 @@
+@import "./vars.css";
+
+.comingSoonPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 1.5rem;
+  padding: 2rem 2rem 0;
+}
+
+.textBlock {
+  max-width: 500px;
+  font-size: 2rem;
+  font-family: var(--font-header);
+  color: var(--color-brown-dark);
+  text-align: left;
+}
+
+.subtitle {
+  margin-top: 0.5rem;
+}
+
+.illustration {
+  max-width: 280px;
+}
+
+.backButton {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--color-primary-red);
+  color: var(--color-background);
+  font-weight: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.backButton:hover {
+  background-color: var(--color-primary-red-dark);
+}

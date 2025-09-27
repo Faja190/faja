@@ -1,0 +1,31 @@
+@import "./vars.css";
+
+.swiper {
+  padding: 0 2.5rem 2rem;
+}
+
+.swiper-wrapper{
+  height: 400px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--color-primary-red-dark);
+  transition: color 0.2s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: var(--color-brown-dark);
+  /* color: #6b3e26; */
+}
+
+.swiper-pagination-bullet {
+  background: var(--color-primary-red-dark);
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--color-brown-medium);
+  opacity: 1;
+}

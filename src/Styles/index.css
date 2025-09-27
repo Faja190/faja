@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Ultra&display=swap');
+@import "./vars.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-background);
+  margin: 0;
+  font-family: var(--font-body);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Flex column layout */
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  /* full screen height */
+}
+
+/* Main grows to fill leftover space */
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
