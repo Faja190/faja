@@ -31,7 +31,7 @@
   padding: 0.6rem 1.2rem;
   border: none;
   border-radius: 8px;
-  background-color: var(--color-primary-red);
+  background-color: var(--color-primary-red-dark);
   color: var(--color-background);
   font-weight: 1rem;
   cursor: pointer;
@@ -40,5 +40,5 @@
 }
 
 .backButton:hover {
-  background-color: var(--color-primary-red-dark);
+  background-color: var(--color-primary-red);
 }

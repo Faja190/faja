@@ -34,7 +34,7 @@
 }
 
 .resumeBtn {
-  background-color: var(--color-primary-red);
+  background-color: var(--color-primary-red-dark);
   color: white;
   padding: 0.6rem 1rem;
   border-radius: 15px;
@@ -46,7 +46,8 @@
 }
 
 .resumeBtn:hover {
-  background-color: var(--color-primary-red-dark);
+  background-color: var(--color-primary-red);
+  transform: scale(1.1);
 }
 
 .linksBtn {
