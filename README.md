@@ -1,4 +1,4 @@
-# faja - Portfolio
+# F.aja - Portfolio
 
 This is a personal portfolio website built with **React.js**.  
 It showcases my contact information, resume, and projects I have worked on.
