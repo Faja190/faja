@@ -4,14 +4,26 @@
 
 # Normal workflow : ./deploy.sh
 # Fast workflow (skip review) : ./deploy.sh --fast
+# Clean workflow (wipe gh-pages & force push): ./deploy.sh --clean
 
 set -e  # exit on error
 
-FAST_MODE=false
+MODE="normal"
 
-# check if --fast flag was passed
+# check which flag was passed
 if [[ $1 == "--fast" ]]; then
-  FAST_MODE=true
+  MODE="fast"
+elif [[ $1 == "--clean" ]]; then
+  MODE="clean"
+fi
+
+if [[ $MODE == "clean" ]]; then
+  echo "Clean deploy: wiping gh-pages branch..."
+  git checkout gh-pages
+  git rm -rf .
+  git commit -m "Clean gh-pages deployment" || echo "No files to remove"
+  git push origin gh-pages --force
+  git checkout main
 fi
 
 echo "Checking out main branch..."
@@ -23,10 +35,11 @@ git pull origin main
 echo "Pushing any local commits to origin/main..."
 git push origin main
 
-echo "Building project..."
+echo "🛠️ Building project..."
+npm install
 npm run build
 
-if [ "$FAST_MODE" = false ]; then
+if [[ $MODE == "normal" ]]; then
   echo "Starting local preview..."
   npm run preview &
   PREVIEW_PID=$!
@@ -37,8 +50,10 @@ if [ "$FAST_MODE" = false ]; then
   read
 
   kill $PREVIEW_PID
-else
+elif [[ $MODE == "fast" ]]; then
   echo "Fast mode enabled — skipping preview."
+elif [[ $MODE == "clean" ]]; then
+  echo "Clean mode enabled — skipping preview."
 fi
 
 echo "Deploying to GitHub Pages..."

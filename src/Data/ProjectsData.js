@@ -11,7 +11,7 @@ export const projects = [
     id: "portfolio",
     title: "My Portfolio Website",
     description: "My portfolio website built with ReactJS.",
-    github: "https://github.com/yourusername/portfolio",
+    github: "https://github.com/Faja190/faja",
     images: [reactLogo, reactLogo],
     cover: [portfolioCover]
   },
