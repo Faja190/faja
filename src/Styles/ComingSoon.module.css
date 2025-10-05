@@ -18,8 +18,13 @@
   text-align: left;
 }
 
+.title {
+    font-weight: 400;
+}
+
 .subtitle {
   margin-top: 0.5rem;
+  font-weight: 400;
 }
 
 .illustration {

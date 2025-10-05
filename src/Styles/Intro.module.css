@@ -19,7 +19,7 @@
 }
 
 .intro h1 {
-  font-weight: 800;
+  font-weight: 400;
   font-size: 4rem;
   font-family: var(--font-header);
   color: var(--color-brown-dark);
@@ -93,7 +93,7 @@
 }
 
 .who {
-  font-weight: 800;
+  font-weight: 400;
   font-size: 225%;
   font-family: var(--font-header);
   flex-shrink: 0;
