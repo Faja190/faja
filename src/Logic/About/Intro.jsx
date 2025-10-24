@@ -54,7 +54,7 @@ export default function Intro() {
                 </div>
                 <div className={styles.divider}></div>
                 <div className={styles.introBody}> 
-                    <p> I'm a soon-to-be graduating Computer Science student at the University of Manitoba. </p>
+                    <p> I'm a Computer Science graduate from University of Manitoba in Winnipeg. </p>
                     <p> I'm passionate about Full-Stack Development, Back-End Development, and UI/UX Design. </p>
                     <p> I hope to be someone who creates meaningful change one step at a time. </p>
                 </div>
