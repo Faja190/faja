@@ -1,4 +1,6 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import { scroller } from "react-scroll";
 
 import Navbar from "./Logic/Nav/Navbar";
 import Intro from "./Logic/About/Intro";
@@ -10,29 +12,43 @@ import ComingSoon from "./Logic/ComingSoon/ComingSoon";
 
 import "./Styles/index.css";
 
+function ScrollHandler() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === "/" && location.state?.scrollTo) {
+      scroller.scrollTo(location.state.scrollTo, {
+        smooth: true,
+        offset: -75,
+      });
+    }
+  }, [location]);
+
+  return (
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <>
+            <Intro />
+            <Skills />
+            <Projects />
+          </>
+        }
+      />
+      <Route path="/projects/:projectId" element={<ComingSoon />} />
+      <Route path="/about" element={<ComingSoon />} />
+    </Routes>
+  );
+}
+
 function App() {
   return (
     <Router>
       <div className="appContainer">
         <Navbar />
         <main className="mainContent">
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <Intro />
-                  <Skills />
-                  <Projects />
-                </>
-              }
-            />
-            
-            {/* <Route path="/projects/:projectId" element={<ProjectPage />} /> */}
-            <Route path="/projects/:projectId" element={<ComingSoon />} />
-            <Route path="/about" element={<ComingSoon />} />
-
-          </Routes>
+          <ScrollHandler />
         </main>
         <Footer />
       </div>
