@@ -112,9 +112,21 @@
   margin-bottom: 1rem;
 }
 
-/* @media (min-width: 1200px) {
-  //only thing right now that needs change is the who am i section
-  .introContents {
-    max-width: 1100px;q
+@media (max-width: 768px) {
+  .introSection{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
   }
-} */
+  .divider{
+    display: none;
+  }
+  .who {
+    align-self: center;   
+    justify-content: center;
+  }
+
+  .introBody {
+    text-align: center;  
+  }
+}
