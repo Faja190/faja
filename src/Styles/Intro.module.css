@@ -35,7 +35,7 @@
 
 .resumeBtn {
   background-color: var(--color-primary-red-dark);
-  color: white;
+  color: var(--color-background);
   padding: 0.6rem 1rem;
   border-radius: 15px;
   text-decoration: none;  
@@ -118,6 +118,24 @@
     display: flex;
     flex-direction: column;
   }
+
+  .intro h2 {
+  font-size: 2rem;
+  }
+
+  .intro h1 {
+  font-weight: 400;
+  font-size: 3rem;
+  }
+
+  .iconLink{
+    font-size: 2.5rem;
+  }
+
+  .resumeBtn{
+    font-weight: 400;
+  }
+
   .divider{
     display: none;
   }
