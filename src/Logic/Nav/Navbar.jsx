@@ -14,6 +14,7 @@ export default function Navbar() {
   const navRef = useRef(null);
   const [menuOpen, setMenuOpen] = useState(false);
 
+  //close menu when page is clicked
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (

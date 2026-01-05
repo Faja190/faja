@@ -9,6 +9,7 @@ import Projects from "./Logic/Projects/Projects";
 import ProjectPage from "./Logic/Projects/ProjectPage";
 import Footer from "./Logic/Footer/Footer";
 import ComingSoon from "./Logic/ComingSoon/ComingSoon";
+import ScrollToTop from "./Logic/Util/ScrollToTop";
 
 import "./Styles/index.css";
 
@@ -45,6 +46,7 @@ function ScrollHandler() {
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="appContainer">
         <Navbar />
         <main className="mainContent">
