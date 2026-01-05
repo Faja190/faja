@@ -48,3 +48,12 @@
   background-color: var(--color-primary-red);
   transform: scale(1.01);
 }
+
+@media (max-width: 768px) {
+  .textBlock{
+    font-size: 1.75rem;
+  }
+  .illustration {
+    max-width: 230px;
+  }
+}
