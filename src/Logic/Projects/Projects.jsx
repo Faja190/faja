@@ -37,7 +37,7 @@ export default function Projects() {
             <SwiperSlide key={p.id}>
               <div className={styles.card}>
                 <Link to={`/projects/${p.id}`} className={styles.cardLink}>
-                  <a> <img className={styles.cardImage} src={p.cover} loading="lazy" ></img></a>
+                  <img className={styles.cardImage} src={p.cover} loading="lazy" ></img>
                   <h3 className={styles.cardTitle}>{p.title}</h3>
                   <p className={styles.cardDesc}>{p.description}</p>
                 </Link>

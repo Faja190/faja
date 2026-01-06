@@ -50,7 +50,6 @@ export default function Navbar() {
   const handleScrollToSection = (section) => {
     if (location.pathname === "/") {
       scroller.scrollTo(section, {
-        smooth: true,
         offset: -75,
       });
     } else {

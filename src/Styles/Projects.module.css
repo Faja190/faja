@@ -1,11 +1,14 @@
 @import "./vars.css";
 
 .projectsSection {
+  scroll-margin-top: 90px;
   text-align: left;
   padding: 0 2rem 4rem;
 }
 
 .swiperContainer{
+  position: relative;
+  z-index: 1;
   max-width: 85%;
   margin: 2.5rem auto;
 }
