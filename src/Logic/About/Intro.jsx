@@ -18,7 +18,7 @@ export default function Intro() {
                             rel="noopener noreferrer"
                             className={styles.resumeBtn}
                         >
-                            View and download my resume
+                            View my resume!
                         </a>
                     </div>
 
