@@ -8,6 +8,13 @@ import myMediaCover from "../resources/ComingSoonCover.webp";
 
 export const projects = [
   {
+    id: "booksapi",
+    title: "Books API",
+    description: "A full stack Books Manager built with ASP.NET Core and SQLite. Add, edit and delete books live",
+    github: "https://github.com/Faja190/BooksApi",
+    altcover: "Click on card for live demo!"
+  },
+  {
     id: "portfolio",
     title: "My Portfolio Website",
     description: "My portfolio website built with ReactJS.",
