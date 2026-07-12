@@ -2,7 +2,7 @@ import reactLogo from "../resources/react.svg";
 import plantCover from "../resources/MyPlantBuddyCover.webp";
 import portfolioCover from "../resources/PortfolioCover.webp";
 
-import myMediaCover from "../resources/ComingSoonCover.webp";
+// import myMediaCover from "../resources/ComingSoonCover.webp";
 
 
 
@@ -36,6 +36,6 @@ export const projects = [
     description: "An Android app thta helps you keep track of multimedia you consume.",
     github: "https://github.com/",
     images: [reactLogo],
-    cover: [myMediaCover]
+    altcover: "Coming Soon!"
   }
 ];
