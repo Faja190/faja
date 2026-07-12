@@ -10,6 +10,7 @@ import ProjectPage from "./Logic/Projects/ProjectPage";
 import Footer from "./Logic/Footer/Footer";
 import ComingSoon from "./Logic/ComingSoon/ComingSoon";
 import ScrollToTop from "./Logic/Util/ScrollToTop";
+import BooksManager from "./Logic/Projects/BooksManager";
 
 import "./Styles/index.css";
 
@@ -37,6 +38,7 @@ function ScrollHandler() {
           </>
         }
       />
+      <Route path="/projects/booksapi" element={<BooksManager />} />
       <Route path="/projects/:projectId" element={<ComingSoon />} />
       <Route path="/about" element={<ComingSoon />} />
     </Routes>
