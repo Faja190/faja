@@ -9,6 +9,7 @@ export default function Intro() {
             <div className={styles.introContent}>
                 <h2> Hi There! </h2>
                 <h1> I'm Fatima Aja </h1>
+                <p className={styles.role}>Full-Stack Developer · UI/UX Enthusiast</p>
                 <div className={styles.introButtons}> 
 
                     <div className={styles.resumeContainer}> 
@@ -53,10 +54,15 @@ export default function Intro() {
                     <p>Who am I?</p>
                 </div>
                 <div className={styles.divider}></div>
-                <div className={styles.introBody}> 
-                    <p> I'm a Computer Science graduate from University of Manitoba in Winnipeg. </p>
-                    <p> I'm passionate about Full-Stack Development, Back-End Development, and UI/UX Design. </p>
-                    <p> I hope to be someone who creates meaningful change one step at a time. </p>
+                <div className={styles.introBody}>
+                    <p>
+                        I am a CS Honours graduate from the University of Manitoba, passionate about
+                        building things that are both functional and thoughtfully designed.
+                    </p>
+                    <p>
+                        I care about clean code, intuitive interfaces, and software that makes
+                        someone's day a little easier.
+                    </p>
                 </div>
             </div>
             <hr className={styles.sectionDivider} />

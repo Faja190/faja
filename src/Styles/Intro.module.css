@@ -2,7 +2,7 @@
 
 .intro {
   background-color: var(--color-background);
-  padding: 0rem 2rem 0.5rem;
+  padding: 3rem 2rem 1rem;
   color: var(--color-brown-dark);
 }
 
@@ -16,38 +16,47 @@
   color: var(--color-primary-red-dark);
   font-size: 3rem;
   margin-bottom: 0.5rem;
-}
+} 
 
 .intro h1 {
   font-weight: 400;
   font-size: 4rem;
   font-family: var(--font-header);
   color: var(--color-brown-dark);
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.role {
+  font-size: 1.05rem;
+  color: var(--color-brown-medium);
+  font-family: var(--font-body);
+  margin-bottom: 2rem;
+  letter-spacing: 0.02em;
 }
 
 .introButtons {
   display: flex;
   justify-content: space-between; 
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .resumeBtn {
   background-color: var(--color-primary-red-dark);
   color: var(--color-background);
-  padding: 0.6rem 1rem;
+  padding: 0.6rem 1.25rem;
   border-radius: 15px;
-  text-decoration: none;  
+  text-decoration: none;
   display: inline-block;
   cursor: pointer;
   font-weight: 500;
-  transition: background-color 0.3s ease;
+  font-family: var(--font-body);
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .resumeBtn:hover {
   background-color: var(--color-primary-red);
-  transform: scale(1.01);
+  transform: scale(1.02);
 }
 
 .linksBtn {
@@ -70,9 +79,10 @@
 .sectionDivider {
   max-width: 90%;
   border: none;
-  height: 3px;
+  height: 1.5px;
   background-color: var(--color-brown-medium);
-  margin: 2rem auto;
+  margin: 2.5rem auto;
+  opacity: 0.3;
 }
 
 .introSection {
@@ -86,8 +96,9 @@
 }
 
 .divider {
-  width: 3px;
+  width: 1.5px;
   background-color: var(--color-brown-medium);
+  opacity: 0.4;
   margin: 0 1rem;
   align-self: stretch;
 }
@@ -99,13 +110,14 @@
   flex-shrink: 0;
   display: flex;
   align-self: center;
+  color: var(--color-brown-dark);
 }
 
 .introBody {
   font-family: var(--font-body);
-  font-size: larger;
+  font-size: 1.1rem;
   color: var(--color-brown-dark);
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 .introBody p {
@@ -128,7 +140,7 @@
   font-size: 3rem;
   }
 
-  .iconLink{
+  .iconLink {
     font-size: 2.5rem;
   }
 
