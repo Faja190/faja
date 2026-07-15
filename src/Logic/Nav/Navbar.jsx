@@ -102,7 +102,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className={styles.navbarLink}
           >
-            Resume
+            Resume/CV
           </a>
         </li>
       </ul>
