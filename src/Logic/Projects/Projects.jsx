@@ -23,8 +23,9 @@ export default function Projects() {
           <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={30}
-          slidesPerView={2}
+          slidesPerView={'auto'}
           navigation
+          loop={true}
           pagination={{ clickable: true }}
           breakpoints={{
             0: { slidesPerView: 1 },   
